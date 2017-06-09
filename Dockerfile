@@ -1,7 +1,7 @@
 FROM centos:7
 
 RUN yum update
-RUN yum install -y mariadb-devel make gcc gcc-c++ openssl-devel readline-devel libcurl-devel libxml2-devel libxslt-devel
+RUN yum install -y git make gcc gcc-c++ openssl-devel readline-devel libcurl-devel libxml2-devel libxslt-devel
 
 ENV INSTALL_PATH /app
 RUN mkdir -p $INSTALL_PATH
